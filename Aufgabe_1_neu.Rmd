@@ -1,0 +1,74 @@
+---
+title: "Aufgabe_1_neu"
+output: html_document
+date: "2023-10-26"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## 1. Den Variablen die entsprechenden Werte zuordnen
+
+a <- 5
+b <- 2
+
+## 2. Summe, Differenz, Produkt und Verhältnis von a und b
+
+r1 <- a+b
+r2 <- a-b
+r3 <- a*b
+r4 <- a/b
+
+## 3. Vektor v1 mit den Werten der Berechnungen aus 2. erstellen
+
+v1 <- c(r1, r2, r3, r4)
+
+## 4. Dem Vektor v1 einen fünften Eintrag hinzufügen
+
+v1 <- c(v1, a**b)
+
+## 5. Inhalt des Vektors v1 anzigen lassen
+
+# mihilfe der print()-Funktion
+
+print(v1)
+
+# durch Eingabe des Variablennamens in eine seperate Zeile
+
+v1
+
+## 6. Vektor v2 erstellen
+
+v2 <- c("Summe", "Differenz", "Produkt", "ratio", "power")
+
+## 7. Inhalt des Vektors v2 anzeigen lassen
+
+v2
+
+print(v2)
+
+## 8. Data-frame mit den beiden Vektoren v1 und v1 erstellen
+
+df <- data.frame(Ergebnisse = v1, Operator = v2)
+
+## 9. Überprüfung der richtigen Spaltennamen
+
+print(df)
+
+## 10. Den gesamten Inhalt des Data-frames (df) anzeigen (wurde schon bei Schritt 9 angezeigt)
+
+print(df)
+
+## 11. Nur den Inhalt der Zelle in Zeile zwei und Spalte 1 anzeigen lassen
+
+print(df[2,1])
+
+
+
+
+```{r cars}
+summary(cars)
+```
+
